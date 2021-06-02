@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Tuhu</title>
+</head>
+<body>
+<p>
+    <a href="{% url 'learning_logs:index' %}">Learning Log </a> -
+    <a href="{% url 'learning_logs:topics' %}">Topics </a>
+</p>
+{% block content %}
+
+{% endblock %}
+</body>
+</html>
