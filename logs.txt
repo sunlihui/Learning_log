@@ -42,3 +42,7 @@ Watching for file changes with StatReloader
 [31/May/2021 02:08:49] "GET / HTTP/1.1" 200 536
 [31/May/2021 02:08:50] "GET /topics/ HTTP/1.1" 200 614
 [31/May/2021 02:08:51] "GET /topics/1/ HTTP/1.1" 200 457
+[02/Jun/2021 10:07:00] "GET / HTTP/1.1" 200 536
+Not Found: /favicon.ico
+[02/Jun/2021 10:07:00] "GET /favicon.ico HTTP/1.1" 404 2506
+[02/Jun/2021 10:07:07] "GET / HTTP/1.1" 200 539
