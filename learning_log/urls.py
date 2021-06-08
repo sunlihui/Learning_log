@@ -22,4 +22,5 @@ urlpatterns = [
     # 这段和官网定义的不太一样，通过google搜到了修改之后可以访问
     # https://stackoverflow.com/questions/48608894/improperlyconfigurederror-about-app-name-when-using-namespace-in-include
     path('', include(('learning_logs.urls','learning_logs'), namespace='learning_logs')),
+    path('users/', include(('users.urls', 'users'), namespace='users')),
 ]
