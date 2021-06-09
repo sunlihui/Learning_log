@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 第三方应用程序
+    'bootstrap3',
     'learning_logs',
-    'users'
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -127,5 +129,11 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# 我的设置
 # 现在，如果未登录的用户请求装饰器@login_required 的保护页面，Django将重定向到settings.py中的LOGIN_URL 指定的URL。
 LOGIN_URL = '/users/login/'
+
+# django-bootstrap3的设置
+BOOTSTRAP3 = {
+'include_jquery': True,
+}
