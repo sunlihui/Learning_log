@@ -126,3 +126,6 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# 现在，如果未登录的用户请求装饰器@login_required 的保护页面，Django将重定向到settings.py中的LOGIN_URL 指定的URL。
+LOGIN_URL = '/users/login/'
